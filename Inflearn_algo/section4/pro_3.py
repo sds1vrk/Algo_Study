@@ -2,7 +2,7 @@
 # M개 이하로 짜르기
 
 import sys
-# sys.stdin=open("input.txt","r")
+sys.stdin=open("input.txt","r")
 
 n,m=map(int,input().split())
 
@@ -32,7 +32,7 @@ def count(mid):
 
 
 
-
+maxx=max(a)
 while lt<=rt:
     # 자를수 있는 중간값 찾기
     mid=(lt+rt)//2
@@ -41,7 +41,10 @@ while lt<=rt:
     # 3개이하로 만들수 있으면 2,3개 가능하기에 이하로 넣는다.
     # 그리고 최소값을 찾기 위해서 rt값을 줄인다
     # rt값을 줄일수록 mid 값이 작아지기 떄문에
-    if count(mid)<=m:
+
+    # 추가적으로 mid>=maxx 를 해준 이유는 123456789 9 9 라고 했을경우 9분 보다 큰것은 따로 들어가야 되므로 mid>=maxx라는 조건을 써준다.
+    # mid는 capcity
+    if mid>=maxx and count(mid)<=m:
         res=mid
         rt=mid-1
 
