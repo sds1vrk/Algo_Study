@@ -14,3 +14,9 @@ print(list(map(plus,a)))
 
 # 리스트와 람다함수 혼합
 print(list(map(lambda x:x+1,a)))
+
+# 람다 정렬
+# sorted(data, key=lambda x : x[0]) ==> 첫번째 키 값을 이용하여 오름차순 정렬
+data=[[55, 259], [1, 226], [2, 217], [58, 201], [61, 198]]
+d = sorted(data, key = lambda x : x[0],reverse=True)
+print(d)

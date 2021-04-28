@@ -44,3 +44,7 @@ tmp="AZ"
 for x in tmp:
     print(ord(x))
 print(chr(66))
+
+
+test="12345678"
+print(test[-1:-3:-1])
