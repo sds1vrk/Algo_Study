@@ -1,4 +1,5 @@
 # DFS로 순열 구하기
+# 일반 순열 구하기 (중복아님)
 import sys
 sys.stdin=open("input.txt","r")
 
