@@ -8,13 +8,11 @@ def solution(n, edge):
     g=[[] for _ in range(n+1)]
 
     for i,j in edge:
-        # g[i][j]=1
-        # g[j][i] = 1
         g[i].append(j)
         g[j].append(i)
 
 
-    # print(g)
+    print(g)
     # 방문학인
     visitied=[-1]*(n+1)
 
@@ -34,7 +32,7 @@ def solution(n, edge):
             if visitied[v]==-1:
                 visitied[v]=depth
                 depth+=1
-                # print(v,end=" ")
+                print(v,end=" ")
 
                 # node, depth
                 for i in g[v]:
@@ -49,7 +47,9 @@ def solution(n, edge):
         if v==max(visitied):
             answer+=1
 
-    print(answer)
+
+    print(visitied)
+    # print(answer)
 
     return answer
 

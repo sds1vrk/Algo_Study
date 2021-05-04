@@ -8,12 +8,15 @@ def solution(n,results):
         wins[i]=set()
         loses[i]=set()
 
+    print(wins)
+    print(loses)
+
     for winner,loser in results:
         wins[winner].add(loser)
         loses[loser].add(winner)
 
-    # print(wins)
-    # print(loses)
+    print(wins)
+    print(loses)
 
     for i in range(1,n+1):
 
@@ -27,8 +30,8 @@ def solution(n,results):
         for loser in wins[i]:
             loses[loser].update(loses[i])
 
-    # print(wins)
-    # print(loses)
+    print(wins)
+    print(loses)
 
     answer=0
     for i in range(1,n+1):
