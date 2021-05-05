@@ -16,6 +16,8 @@ def dfs(l,s,hap):
     if l==m :
         # 반드시 밑에 써줘야 됨, 안써주면 인덱스 번호 초과됨
         # if문에 들어가서 else에 못들어가기 하기 위해서
+        print(ch)
+
         if hap%k==0:
             cnt+=1
 

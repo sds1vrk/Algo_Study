@@ -12,6 +12,7 @@ result=[]
 def dfs(idx):
     if idx==n:
         hap=0
+        # 부분집합의 모든 합을 구하고 처음과 끝을 비교
         for i in range(n+1):
             if ch[i]!=0:
                 print(ch[i],end=" ")
@@ -32,8 +33,8 @@ ch=[0]*(n+1)
 idx=0
 dfs(idx)
 
-# print(result)
-
+print(result)
+# 처음과 끝을 비교
 for i in range(len(result)//2):
     if result[i]==result[len(result)-1-i]:
         print("YES")
