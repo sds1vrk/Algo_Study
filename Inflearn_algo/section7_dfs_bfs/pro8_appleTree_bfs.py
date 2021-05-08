@@ -2,7 +2,7 @@
 
 import sys
 from collections import deque
-# sys.stdin=open("input.txt","r")
+sys.stdin=open("input.txt","r")
 
 n=int(input())
 a=[list(map(int,input().split())) for _ in range(n)]
@@ -35,6 +35,9 @@ while True:
         # 큐가 돌리는것을 확인하기 위해 큐의 개수를 확인
         # 탐색될 큐만큼 돌리고 안에서 4방향 진행
         size=len(q)
+
+        print(size)
+
         for i in range(size):
             x, y = q.popleft()
 
