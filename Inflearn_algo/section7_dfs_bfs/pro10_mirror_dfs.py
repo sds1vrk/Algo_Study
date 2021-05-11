@@ -24,6 +24,7 @@ def dfs(x,y):
             ny=y+dy[i]
 
             if 0<=nx<=6 and 0<=ny<=6 and a[nx][ny]==0:
+                print("nx,ny",nx,ny)
                 a[nx][ny]=1
                 dfs(nx,ny)
                 # 빽해서 바로 전으로 되돌갈때는 취소
