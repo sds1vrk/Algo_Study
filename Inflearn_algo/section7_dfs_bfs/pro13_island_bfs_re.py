@@ -1,4 +1,10 @@
-# 섬 아일랜드 BFS 강의로 풀기
+# 아일랜드 BFS
+# 인강 풀이 방식
+# 1인 지점부터 바로 큐에 넣기
+# 큐에 넣은 후 방문 처리
+# 그리고 그 if문 안에서 While문 돌리기 ==> 이러면 cnt 를 1번만 작성해도 됨
+
+
 
 from collections import deque
 import sys

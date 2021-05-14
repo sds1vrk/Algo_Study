@@ -1,4 +1,10 @@
-# 안전영역 BFS로
+# 안전영역 BFS로 풀기
+# 내 풀이 방법
+# 맵 중에서 최소값과 최대값 찾기
+# 최소값부터~ 최대값+1 까지 for문 돌리기
+# 원본 맵을 이용해야 하기 때문에 copy.deepcopy(a)로 맵 복사하고 이걸 이용하기
+
+
 from collections import deque
 import sys
 import copy
