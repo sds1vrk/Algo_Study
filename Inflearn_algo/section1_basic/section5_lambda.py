@@ -20,3 +20,5 @@ print(list(map(lambda x:x+1,a)))
 data=[[55, 259], [1, 226], [2, 217], [58, 201], [61, 198]]
 d = sorted(data, key = lambda x : x[0],reverse=True)
 print(d)
+
+d=sorted(data, key=lambda x: x[0],reverse=True)
