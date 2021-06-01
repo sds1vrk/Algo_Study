@@ -7,24 +7,26 @@ def solution(skill, skill_trees):
     for i in skill_trees:
         a = list(i)
         # print("a",a)
-
-        idx = len(skill) - 1
+        idx = 0
         # for i in range(len(a)-1,-1,-1):
-        a_idx = len(a) - 1
+        a_idx = 0
         while a:
+            # print("a",a)
             # print("a",a[a_idx])
-            if a[a_idx] in skill and skill:
+            if a[a_idx] in skill:
                 if a[a_idx] == skill[idx]:
                     # print("here")
-                    a.pop()
-                    idx -= 1
+                    idx += 1
+                    # a_idx+=1
+                    a.pop(0)
                 else:
                     break
             else:
-                a.pop()
+                a.pop(0)
 
-            a_idx -= 1
+            # a_idx+=1
 
+        # print("a",a)
         if len(a) == 0:
             cnt += 1
 
