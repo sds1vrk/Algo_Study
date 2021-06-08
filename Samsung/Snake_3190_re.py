@@ -1,7 +1,6 @@
 from collections import deque
-
 import sys
-sys.stdin=open("3190.txt", "r")
+# sys.stdin=open("3190.txt", "r")
 
 n=int(input())
 m=int(input())
@@ -13,19 +12,16 @@ for i in range(m):
     x,y=map(int,input().split())
     a[x-1][y-1]=1
 
-print("a",a)
-
 # 방향 변경 정보 저장
 changes=dict()
 rot=int(input())
 for _ in range(rot):
     dic_a,dic_b=input().split()
     changes[int(dic_a)]=dic_b
-print(changes)
 
 # 뱀 위치
 snake=deque()
-
+snake.append([0,0])
 # 북, 동, 남, 서
 dx=[-1,0,1,0]
 dy=[0,1,0,-1]
@@ -44,8 +40,6 @@ def change_direction(direct):
     else :
         d=(d-1)%4
     return d
-
-print("nx,ny",nx,ny)
 
 while True:
     time+=1
@@ -75,19 +69,10 @@ while True:
 
         else :
             snake.append([nx,ny])
-            snake.popleft()
+            x,y=snake.popleft()
 
     else :
         # 벗어난 경우 break
         break
 
 print(time)
-
-
-
-
-
-
-
-
-
