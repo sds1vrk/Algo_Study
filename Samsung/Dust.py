@@ -1,7 +1,7 @@
 # 미세먼지
 import sys
 import copy
-# sys.stdin=open("dust.txt","r")
+sys.stdin=open("dust.txt","r")
 r,c,t=map(int,input().split())
 
 board=[list(map(int,input().split())) for _ in range(r)]
@@ -81,22 +81,39 @@ def cleaner():
             break
 
 
+
+    print("now",now)
+
     # 순환
     # upper bound (오 위 왼 아래 순서)
+    # 왼쪽->오른쪽
+    # 2행 7열, 맨끝에꺼를 temp에 저장함
     temp = board[now[0]][c-1]
+    #한칸씩 오른쪽으로 이동
     for i in range(c-2, 0, -1):
         board[now[0]][i+1] = board[now[0]][i]
-
+    
+    # 아래->위쪽
+    # 마지막 꺼를 임시 저장함
+    # 한칸씩 위로 이동
     temp2 = board[0][c-1]
     for i in range(now[0]-1):
         board[i][c-1] = board[i+1][c-1]
+
+    # 1행 7열에 위에서 저장한 임시값을 놓음
     board[now[0]-1][c-1] = temp
 
+
+    # 오른쪽->왼쪽
+    # 마지막끝에 임시값을 저장함
     temp = board[0][0]
     for i in range(c-1):
         board[0][i] = board[0][i+1]
     board[0][c-2] = temp2
 
+
+    #위에서 ->아래
+    # 임시값을 놓음
     for i in range(now[0]-1, 1, -1):
         board[i][0] = board[i-1][0]
     board[now[0]][1] = 0
