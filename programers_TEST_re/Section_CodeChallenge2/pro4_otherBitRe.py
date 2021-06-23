@@ -37,16 +37,12 @@ def solution(numbers):
                 number //= 2
                 idx += 1
 
-
             # 홀수 일때는 2개 비트를 변경 함, 이떄 01이 나올떄까지 진행
             # 1인 비트에 1을 더하면 두개가 변경되기 때문에 이 문제를 만듬
 
 
             # 0111 ==> 1011 (앞에 두개 비트를 변경)
             # 0011 ==> 0101 (0을 1로, 1을 0으로 변경)
-
-
-
             answer.append(target + 2 ** (idx) - 2 ** (idx-1))
         else:
             answer.append(number+1)

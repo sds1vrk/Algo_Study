@@ -1,8 +1,8 @@
 def solution(left, right):
     answer = 0
 
-    if left == right >= 1 and left % 2 != 0:
-        return -left
+    # if left == right >= 1 and left % 2 != 0:
+    #     return -left
 
     # 약수 구하기
     def calc_prime(n):
