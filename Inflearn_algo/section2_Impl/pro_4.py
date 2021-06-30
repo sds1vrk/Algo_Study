@@ -2,7 +2,7 @@
 
 # 평균 구하기, 반올림은 round()
 import sys
-sys.stdin=open("../section1/input.txt", "rt")
+sys.stdin=open("../section1/3190.txt", "rt")
 
 n=int(input())
 

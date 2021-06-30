@@ -1,6 +1,6 @@
 # 두 리스트 합치기
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 n_a=list(map(int,input().split()))

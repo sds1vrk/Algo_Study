@@ -1,6 +1,6 @@
 # K 번쨰 큰수 구하기 (2)
 import sys
-sys.stdin=open("../section1/input.txt", "rt")
+sys.stdin=open("../section1/3190.txt", "rt")
 
 n,k=map(int,input().split())
 result=[]

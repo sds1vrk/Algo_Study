@@ -1,7 +1,7 @@
 # 구명보트 최소 개수
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 
 

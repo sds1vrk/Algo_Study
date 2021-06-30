@@ -12,7 +12,7 @@
 
 import sys
 import math
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 a=[i for i in range (1,21)]
 # k=array[10-1:5-1-1:-1]
 # print(k)

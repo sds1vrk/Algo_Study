@@ -13,7 +13,7 @@
 import sys
 from collections import deque
 
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 m,n=map(int,input().split())
 
 def print_graph(a):

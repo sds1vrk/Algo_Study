@@ -8,7 +8,7 @@
 from collections import deque
 import sys
 import copy
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 a=[list(map(int,input().split())) for _ in range(n)]

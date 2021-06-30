@@ -2,7 +2,7 @@
 # 합이 45인것으로 했는데 5번 케이스에서 반례 발생
 # 1~9까지 합이 45, 그 외에도 9개의 합이 45인것이 존재
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 a=[list(map(int,input().split()))for _ in range(9)]
 

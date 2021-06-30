@@ -5,7 +5,7 @@
 
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 
 # K는 랜선의 , N: 필요한 랜선의 개수

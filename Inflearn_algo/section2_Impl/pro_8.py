@@ -3,7 +3,7 @@
 
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 array=list(map(int,input().split()))

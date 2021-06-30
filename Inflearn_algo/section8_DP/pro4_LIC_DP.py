@@ -19,7 +19,7 @@
 # ==> DP에 각 1~n+1까지 저장
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 a=list(map(int,input().split()))

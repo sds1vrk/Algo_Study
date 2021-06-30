@@ -2,7 +2,7 @@
 # 그리디로는 안됨 ==> 최대 무게이기 때문에 모든 경우의 수를 구해야 함, 최대 마리는 그리디로 가능
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n,m=map(int,(input().split()))
 a=[0]*(m)

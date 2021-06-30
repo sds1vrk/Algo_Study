@@ -1,6 +1,6 @@
 # 동전 교환
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 a=list(map(int,input().split()))

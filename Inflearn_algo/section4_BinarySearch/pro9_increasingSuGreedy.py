@@ -5,7 +5,7 @@
 # 이유는 3, 6, 9 ==>  L R R 이 됨
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 n=int(input())
 a=list(map(int,input().split()))
 

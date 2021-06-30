@@ -3,7 +3,7 @@
 import sys
 from itertools import combinations
 from itertools import permutations
-# sys.stdin=open("input.txt")
+# sys.stdin=open("3190.txt")
 
 # a=[1,2,3]
 # print(list(permutations(a,2)))

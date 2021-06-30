@@ -4,7 +4,7 @@
 
 # dp를 m+1까지 잡는다 최대 맥스
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 a=list(map(int,input().split()))

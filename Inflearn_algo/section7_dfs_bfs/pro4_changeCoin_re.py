@@ -3,7 +3,7 @@
 # 예를들면 100원 짜리 동전 5개 ==> 0,100,100*2,100*3,100*4,100*5
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 t=int(input())
 m=int(input())
 p=[]

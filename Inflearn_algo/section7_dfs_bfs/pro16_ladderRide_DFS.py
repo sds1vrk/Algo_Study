@@ -7,7 +7,7 @@
 # 마지막으로 아래로 갔을때 도착지는 0이 아닌 수가 들어가야됨 (1이 아니라 다른 수이기 떄문에)
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 a=[list(map(int,input().split())) for _ in range(10)]
 

@@ -1,6 +1,6 @@
 # 수들의 합
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 # 시간 초과 발생하여 강의 보고 진행
 

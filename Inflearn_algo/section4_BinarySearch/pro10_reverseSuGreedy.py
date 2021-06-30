@@ -4,7 +4,7 @@
 # 0인 배열 만든 다음에, 1부터 집어 넣어 현 상황에서 최선의 경우 고르기
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 a=list(map(int,input().split()))

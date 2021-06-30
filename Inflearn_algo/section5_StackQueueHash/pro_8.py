@@ -2,7 +2,7 @@
 # 시에 쓰이지 않는 단어 찾기
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 

@@ -1,7 +1,7 @@
 # 파일 입출력, read text
 # 약수 구하기
 import sys
-# sys.stdin=open("input.txt","rt")
+# sys.stdin=open("3190.txt","rt")
 n,k=map(int,input().split())
 # print(n,k)
 

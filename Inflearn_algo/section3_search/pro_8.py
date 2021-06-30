@@ -4,7 +4,7 @@
 # stack의 pop과 append를 활용
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 

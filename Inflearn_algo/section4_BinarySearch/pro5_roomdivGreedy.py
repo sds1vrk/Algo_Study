@@ -4,7 +4,7 @@
 # 따라서 강의 종료 시간에 따라 정렬
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 

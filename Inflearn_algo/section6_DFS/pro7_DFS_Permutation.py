@@ -2,7 +2,7 @@
 # 중복 순열은 트리가 n가지로 뻗어있다고 생각하면 됨
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 n,m=map(int,input().split())
 # n개의 수
 

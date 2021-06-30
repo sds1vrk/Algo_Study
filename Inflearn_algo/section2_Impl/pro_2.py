@@ -1,5 +1,5 @@
 import sys
-# sys.stdin=open("input.txt","rt")
+# sys.stdin=open("3190.txt","rt")
 
 # 리스트 만드는 방법 2가지
 # array = [i for i in map(int, input().split())]

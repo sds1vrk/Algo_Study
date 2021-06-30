@@ -3,7 +3,7 @@
 # 1~9까지 합이 45, 그 외에도 9개의 합이 45인것이 존재
 # 반례 2 4 3 6 2 8 5 7 8
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 a=[list(map(int,input().split()))for _ in range(9)]
 

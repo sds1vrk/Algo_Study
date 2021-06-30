@@ -1,7 +1,7 @@
 # 정다면체
 
 import sys
-sys.stdin=open("../section1/input.txt", "rt")
+sys.stdin=open("../section1/3190.txt", "rt")
 
 n,m=map(int,input().split())
 

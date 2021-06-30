@@ -2,7 +2,7 @@
 # 상하좌우 검색해서 자기보다 작으면 break, 다 통과되면 result에 추가
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 n=int(input())
 

@@ -1,7 +1,7 @@
 # 최대 선 연결하기
 # 10개가 숫자가 주어졌을때 평행하지 않도록 연결하는 방법
 import sys
-# sys.stdin=open("input.txt")
+# sys.stdin=open("3190.txt")
 
 n=int(input())
 a=list(map(int,input().split()))

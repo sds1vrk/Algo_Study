@@ -1,7 +1,7 @@
 # 점수 계산
 
 import sys
-# sys.stdin=open("input.txt","rt")
+# sys.stdin=open("3190.txt","rt")
 
 n=int(input())
 

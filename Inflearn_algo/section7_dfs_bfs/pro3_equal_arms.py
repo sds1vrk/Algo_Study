@@ -3,7 +3,7 @@
 # 추를 왼쪽에 놓느다 (+), 가운데에 놓는다 (-), 오른쪽에 놓는다 (사용하지 않는다)
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 def dfs(l,sum):
     global res
 

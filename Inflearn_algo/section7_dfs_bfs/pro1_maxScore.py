@@ -1,6 +1,6 @@
 # 최대 점수 구하기 (DFS)
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 # 조합을 풀기
 #
 n,m=map(int,input().split())

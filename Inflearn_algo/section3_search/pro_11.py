@@ -1,7 +1,7 @@
 # 격자판 회문수
 
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 
 # 문자로 저장
 a=[list((input().split())) for _ in range(7)]
