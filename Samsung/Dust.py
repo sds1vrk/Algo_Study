@@ -92,7 +92,7 @@ def cleaner():
     #한칸씩 오른쪽으로 이동
     for i in range(c-2, 0, -1):
         board[now[0]][i+1] = board[now[0]][i]
-    
+
     # 아래->위쪽
     # 마지막 꺼를 임시 저장함
     # 한칸씩 위로 이동
