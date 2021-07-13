@@ -6,9 +6,9 @@
 # Return은 Center를 제외하고 트리에 연결된 이익금 구하기
 def solution(enroll, referral, seller, amount):
     # 자식 노드
-    print(enroll,len(enroll))
+    print("enroll",enroll,len(enroll))
     # 부모 노드
-    print(referral,len(referral))
+    print("referral",referral,len(referral))
 
     # 비용 계산
     costs=[0]*len(enroll)

@@ -1,7 +1,7 @@
 def solution(lottos, win_nums):
 
-    print(lottos)
-    print(win_nums)
+    # print(lottos)
+    # print(win_nums)
 
     lottos.sort()
     win_nums.sort()
@@ -14,7 +14,7 @@ def solution(lottos, win_nums):
 
     # 0의 개수는
     count_0=len(lottos)-len(test_lotto)
-    print("test_lo",test_lotto,count_0)
+    # print("test_lo",test_lotto,count_0)
 
     # 당첨 count
     def count(lotto):
@@ -39,15 +39,15 @@ def solution(lottos, win_nums):
                 new_lotto.append(i)
 
     m=count(len(new_lotto))
-    print("꼴등 로또 ",m)
+    # print("꼴등 로또 ",m)
 
     # 꼴등+0의 개수
     n=count(len(new_lotto)+count_0)
-    print("1등 로또",n)
+    # print("1등 로또",n)
 
 
     answer = [n,m]
-    print(answer)
+    # print(answer)
     return answer
 
 

@@ -11,17 +11,17 @@ def solution(rows, columns, queries):
         for j in range(1,columns+1):
             # graph.append
             # print(rows*i+j)
-            graph[i].append(rows*i+j)
-    print("original_graph",graph)
+            graph[i].append(columns*i+j)
+    # print("original_graph",graph)
     answer = []
 
-    def mat_graph(graph):
-        for row in graph:
-            print(row)
+    # def mat_graph(graph):
+    #     for row in graph:
+            # print(row)
 
     # 시계 방향 회전
     def rotate(graph,query):
-        print(query)
+        # print(query)
 
         # top: starting row index
         # bottom : ending row index
@@ -77,18 +77,18 @@ def solution(rows, columns, queries):
             prev=curr
 
 
-        print("테두리 안에 숫자", array)
+        # print("테두리 안에 숫자", array)
         answer.append(min(array))
         return graph
 
 
 
     for i in queries:
-        print("query",i)
+        # print("query",i)
         k=rotate(graph,i)
         # 회전 후에 그래프
-        print("회전 후에 그래프")
-        mat_graph(k)
+        # print("회전 후에 그래프")
+        # mat_graph(k)
 
         graph=k
 

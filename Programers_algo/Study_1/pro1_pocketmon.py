@@ -14,13 +14,6 @@ def solution(nums):
         elif answer==target:
             break
 
-
-    # print(answer)
-
-
-
-
-
     return answer
 
 

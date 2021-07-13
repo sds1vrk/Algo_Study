@@ -1,6 +1,6 @@
 # 랜선 자르기
 import sys
-# sys.stdin=open("input.txt","r")
+# sys.stdin=open("3190.txt","r")
 n,m=map(int,input().split())
 a=[]
 for i in range(n):
