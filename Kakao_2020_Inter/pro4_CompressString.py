@@ -2,7 +2,7 @@
 
 
 def solution(s):
-    answer = 0
+    answer = len(s)
 
 
 
@@ -13,17 +13,18 @@ def solution(s):
         i=0
 
         while i<size:
-            k=s[i:n]
+            k=s[i:i+n]
             a.append(k)
-            i+=1
-            n+=1
+            i+=n
+            # n+=1
 
-        print(a)
+        # print(a)
 
         # 만약 쪼개진 a가 뒤에랑 같다면 숫자 증가
 
         idx=1
         size=len(a)
+        # print(size)
 
         fi=a[0]
 
@@ -34,40 +35,65 @@ def solution(s):
             if fi==a[idx]:
                 j+=1
 
+                # 마지막 인덱스면 증가
+                # if idx==size-1:
+                #     k=str(j)+fi
+                #     new_ans+=k
+
             else :
 
-                fi = a[idx]
 
                 if j>1:
                     k=str(j)+fi
+
                     new_ans+=k
 
                 else :
-                    new_ans+=a[idx]
+                    new_ans+=fi
+
+                fi = a[idx]
                 j=1
 
 
             idx+=1
 
-        print(new_ans)
+
+            # 마지막 인덱스면 증가
+            if idx == size :
+
+                if j>1:
+                    k=str(j)+fi
+
+                    new_ans+=k
+
+                else :
+                    new_ans+=fi
+
+        # print(new_ans)
+
+
+        return len(new_ans)
 
 
 
-        return 0
+        # return 0
 
-    comress(s,1)
-
-
-
-
-    # for i in range(len(s)):
-    #     ans=comress(s,i)
-
-        # if answer<ans:
-        #     answer=ans
+    # comress(s,1)
+    # comress(s,2)
+    # comress(s,8)
+    # comress(s,4)
 
 
-    return answer
+
+
+    for i in range(1,len(s)):
+        ans=comress(s,i)
+        if answer>ans:
+            answer=ans
+    # print(answer)
+    # return answer
 
 
 solution("aabbaccc")
+# solution("ababcdcdababcdcd")
+solution("abcabcabcabcdededededede")
